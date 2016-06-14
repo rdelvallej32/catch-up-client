@@ -10,5 +10,9 @@ export default Model.extend({
   company: attr('string'),
   last_contacted: attr('date'),
   fact: attr('string'),
-  reminder: attr('number')
+  reminder: attr('number'),
+
+  fullName: Ember.computed('first_name', 'last_name', function() {
+    return `${this.get('first_name')} ${this.get('last_name')}`;
+  })
 });
