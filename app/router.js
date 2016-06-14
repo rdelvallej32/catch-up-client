@@ -11,7 +11,7 @@ Router.map(function () {
   this.route('change-password');
   this.route('users');
   this.route('contacts');
-  this.route('contact');
+  this.route('contact', { path: '/contacts/:id' });
 });
 
 export default Router;
