@@ -10,6 +10,5 @@ export default Model.extend({
   company: attr('string'),
   last_contacted: attr('date'),
   fact: attr('string'),
-  reminder: attr('number'),
-  user: belongsTo('user', { inverse: 'contacts' })
+  reminder: attr('number')
 });
