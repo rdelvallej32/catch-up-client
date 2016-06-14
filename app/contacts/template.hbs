@@ -1,5 +1,6 @@
-{{#each model as |contact|}}
-  {{contact.fullName}}
-{{/each}}
-
+<div class="row no-gutter clear-float">
+      {{#each model as |contact|}}
+          <div class="col-md-4 building-card">{{contact-hub contact=contact}}</div>
+      {{/each}}
+  </div>
 {{outlet}}
