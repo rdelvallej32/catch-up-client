@@ -8,7 +8,7 @@ export default Model.extend({
   occupation: attr('string'),
   professional_relationship: attr('string'),
   company: attr('string'),
-  last_contacted: attr('date'),
+  last_contacted: attr('string'),
   fact: attr('string'),
   reminder: attr('number'),
 
