@@ -15,8 +15,8 @@ export default Ember.Component.extend({
     },
 
     reset () {
-      console.log('clicked');
       this.set('contact', {});
+      this.sendAction('back');
     },
   },
 });
