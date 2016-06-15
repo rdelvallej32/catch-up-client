@@ -10,11 +10,13 @@ export default Ember.Component.extend({
   actions: {
     submit () {
       this.sendAction('createContact', this.get('contact'));
+      this.set('contact', "");
+     this.$('input').focus();
     },
 
     reset () {
+      console.log('clicked');
       this.set('contact', {});
-      this.sendAction('goHome');
     },
   },
 });
