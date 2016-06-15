@@ -12,6 +12,7 @@ Router.map(function () {
   this.route('users');
   this.route('contacts');
   this.route('contact', { path: '/contacts/:id' });
+  this.route('new-contact');
 });
 
 export default Router;
