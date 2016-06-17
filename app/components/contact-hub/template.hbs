@@ -1,15 +1,38 @@
+<div class="card-block">
 
-    <div class="card-block">
+<h4>
 
-        <h4 class="card-title contact-title">{{contact.first_name}}</h4>
-        <h4 class="card-title contact-title">{{contact.last_name}}</h4>
-        <h4 class="card-title contact-title">{{contact.occupation}}</h4>
-        <h4 class="card-title contact-title">{{contact.company}}</h4>
-        <h4 class="card-title contact-title">{{contact.fact}}</h4>
-        <h4 class="card-title contact-title">{{contact.last_contacted}}</h4>
-        <h4 class="card-title contact-title">{{contact.reminder}}</h4>
+{{#if contenteditable}}
+{{input value=firstName class="edit-bar"}}
+{{input value=lastName class="edit-bar"}}
+{{input value=occupation class="edit-bar"}}
+{{input value=company class="edit-bar"}}
+{{input value=fact class="edit-bar"}}
+{{input value=lastContacted class="edit-bar"}}
+{{input value=reminder class="edit-bar"}}
+<button class="btn btn-default btn-xs" {{action save}}>Save</button>
+<button class="btn btn-default btn-xs" {{action cancel}}>Cancel</button>
+{{else}}
+<ul class="card-look">
+  <a href="" {{action edit on="click"}} data-toggle="tooltip" title="Click to edit name"><span class="glyphicon glyphicon-pencil glyphicon-small"></span></a>
+<li class="editable" {{action edit on="click"}}>{{firstName}}</li>
+<li>{{lastName}}</li>
+<li>{{occupation}}</li>
+<li>{{company}}</li>
+<li>{{fact}}</li>
+<li>{{lastContacted}}</li>
+<li>{{reminder}}</li>
+</ul>
+{{/if}}
 
-    </div>
+</h4>
+
+</div>
+
+
+
+
+
 
     {{#link-to 'contacts'}}
     <button>Back</button>
