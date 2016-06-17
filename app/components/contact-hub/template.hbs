@@ -3,25 +3,27 @@
 <h4>
 
 {{#if contenteditable}}
-{{input value=firstName class="edit-bar"}}
-{{input value=lastName class="edit-bar"}}
-{{input value=occupation class="edit-bar"}}
-{{input value=company class="edit-bar"}}
-{{input value=fact class="edit-bar"}}
-{{input value=lastContacted class="edit-bar"}}
-{{input value=reminder class="edit-bar"}}
+{{input value=contact.first_name class="edit-bar"}}
+{{input value=contact.last_name class="edit-bar"}}
+{{input value=contact.occupation class="edit-bar"}}
+{{input value=contact.company class="edit-bar"}}
+{{input value=contact.professional_relationship class="edit-bar"}}
+{{input value=contact.fact class="edit-bar"}}
+{{input type="date" value=contact.last_contacted class="edit-bar"}}
+{{input type="number"value=contact.reminder class="edit-bar"}}
 <button class="btn btn-default btn-xs" {{action save}}>Save</button>
 <button class="btn btn-default btn-xs" {{action cancel}}>Cancel</button>
 {{else}}
 <ul class="card-look">
   <a href="" {{action edit on="click"}} data-toggle="tooltip" title="Click to edit name"><span class="glyphicon glyphicon-pencil glyphicon-small"></span></a>
-<li class="editable" {{action edit on="click"}}>{{firstName}}</li>
-<li>{{lastName}}</li>
-<li>{{occupation}}</li>
-<li>{{company}}</li>
-<li>{{fact}}</li>
-<li>{{lastContacted}}</li>
-<li>{{reminder}}</li>
+<li class="editable" {{action edit on="click"}}>{{contact.first_name}}</li>
+<li>{{contact.last_name}}</li>
+<li>{{contact.occupation}}</li>
+<li>{{contact.company}}</li>
+<li>{{contact.professional_relationship}}</li>
+<li>{{contact.fact}}</li>
+<li>{{contact.last_contacted}}</li>
+<li>{{contact.reminder}}</li>
 </ul>
 {{/if}}
 
