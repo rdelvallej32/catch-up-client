@@ -1,3 +1,4 @@
+<div class="card">
 <div class="x-container" id="delete-button">
    <a href="#" class="delete-buttons" data-toggle="modal" data-target="#delete-modal-{{contact.id}}"><span class="glyphicon glyphicon-remove"></span></a>
  </div>
@@ -5,6 +6,8 @@
 {{#link-to 'contact' contact}}
   <h2>{{contact.fullName}}</h2>
 {{/link-to}}
+
+</div>
 
 <!-- Modal -->
 <div class="modal" id="delete-modal-{{contact.id}}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">

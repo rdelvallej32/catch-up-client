@@ -1,8 +1,15 @@
 @import 'bootstrap';
 @import 'bootstrap/theme';
 
-.test {
-  color:red;
+.card {
+  background: #fff;
+  border: 1px solid #aaa;
+  border-bottom: 3px solid #bbb;
+  margin: 15px;
+  overflow: hidden;
+  padding: 0;
+
+
 }
 
 .card-look {
