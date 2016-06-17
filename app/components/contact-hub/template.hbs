@@ -11,12 +11,12 @@
 {{input value=contact.fact class="edit-bar"}}
 {{input type="date" value=contact.last_contacted class="edit-bar"}}
 {{input type="number"value=contact.reminder class="edit-bar"}}
-<button class="btn btn-default btn-xs" {{action save}}>Save</button>
-<button class="btn btn-default btn-xs" {{action cancel}}>Cancel</button>
+<button class="btn btn-default btn-xs" {{action "save"}}>Save</button>
+<button class="btn btn-default btn-xs" {{action "cancel"}}>Cancel</button>
 {{else}}
 <ul class="card-look">
-  <a href="" {{action edit on="click"}} data-toggle="tooltip" title="Click to edit name"><span class="glyphicon glyphicon-pencil glyphicon-small"></span></a>
-<li class="editable" {{action edit on="click"}}>{{contact.first_name}}</li>
+  <a href="" {{action "edit" on="click"}} data-toggle="tooltip" title="Click to edit name"><span class="glyphicon glyphicon-pencil glyphicon-small"></span></a>
+<li class="editable" {{action "edit" on="click"}}>{{contact.first_name}}</li>
 <li>{{contact.last_name}}</li>
 <li>{{contact.occupation}}</li>
 <li>{{contact.company}}</li>
