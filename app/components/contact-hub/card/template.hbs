@@ -3,16 +3,18 @@
 <div class="x-container" id="delete-button">
    <a href="#" class="delete-buttons" data-toggle="modal" data-target="#delete-modal-{{contact.id}}"><span class="glyphicon glyphicon-remove" data-toggle="right" data-placement="right" title="Delete a Contact"></span></a>
  </div>
+ {{#link-to 'contact' contact}}
 
  <div class="card-img">
    <span class="glyphicon glyphicon-user re-size"></span>
  </div>
 
 <div class="page-links">
-{{#link-to 'contact' contact}}
+
   <span class="big-text">{{contact.fullName}}</span>
-{{/link-to}}
+
 </div>
+{{/link-to}}
 
 </div>
 </div>
