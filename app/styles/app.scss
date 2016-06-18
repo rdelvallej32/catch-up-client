@@ -22,8 +22,21 @@
 
 }
 
+.glyphicon-user {
+  color: grey;
+  font-size: 400%;
+}
+
+.glyphicon-remove {
+  font-size: 150%;
+}
+
 .card:hover {
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.card-img {
+  text-align: center;
 }
 
 .card-look {
