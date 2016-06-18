@@ -1,5 +1,10 @@
 @import 'bootstrap';
 @import 'bootstrap/theme';
+@import 'colors';
+
+a:hover {
+  text-decoration: none;
+}
 
 .card {
   background: #fff;
@@ -11,13 +16,18 @@
   padding: 0;
 
   .big-text {
+    color: $carbon;
     font-size: 30px;
     font-weight: bold;
     margin: 15px;
+
   }
 
   .page-links {
     text-align: center;
+    text-decoration: none;
+    text-decoration-color: $neutral;
+
   }
 
 }
@@ -28,11 +38,17 @@
 }
 
 .glyphicon-remove {
+  color: $carbon;
   font-size: 150%;
 }
 
 .card:hover {
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+
+  .big-text {
+    color: $sky;
+    text-decoration-color: $neutral;
+  }
 }
 
 .card-img {
