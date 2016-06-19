@@ -3,6 +3,11 @@
 
 
 {{#if contenteditable}}
+<div class="card">
+  <div class="bio-header">
+    <h2>Editing {{contact.fullName}}'s Contact Card</h2>
+  </div>
+  <ul>
 <legend>First Name</legend>
 {{input value=contact.first_name class="edit-bar"}}
 <legend>Last Name</legend>
@@ -19,10 +24,15 @@
 {{input type="date" value=contact.last_contacted class="edit-bar"}}
 <legend>Reminder</legend>
 {{input type="number"value=contact.reminder class="edit-bar"}}
+</ul>
 <button class="btn btn-default btn-xs" {{action "save"}}>Save</button>
 <button class="btn btn-default btn-xs" {{action "cancel"}}>Cancel</button>
+</div>
 {{else}}
 <div class="card">
+  <div class="bio-header">
+    <h2>{{contact.fullName}}'s Contact Card</h2>
+  </div>
   <div class="card-img">
     <p>Image goes here</p>
   </div>
