@@ -12,6 +12,69 @@ a:hover {
   text-decoration: none;
 }
 
+.header {
+  background: url('http://www.twitrcovers.com/wp-content/uploads/2012/09/Friends.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 150px;
+  padding-top: 200px;
+  text-align: center;
+}
+
+.reminder {
+  font-size: 20px;
+  text-align: center;
+}
+
+.intro-message {
+  padding-bottom: 50px;
+  padding-left: 60px;
+  text-align: left;
+
+  h1 {
+    color: $neutral;
+    font-size: 80px;
+    padding-bottom: 5px;
+  }
+
+  p {
+    color: $neutral;
+    font-size: 20px;
+    padding-bottom: 10px;
+  }
+
+}
+
+
+.site-header {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 200%;
+  padding: 50px;
+  text-align: center;
+
+}
+
+.intro {
+  .glyphicon {
+    font-size: 400%;
+    padding-left: 30%;
+  }
+}
+
+.column-content {
+  font-family: 'Open Sans', sans-serif;
+  height: 100%;
+  padding: 20px;
+}
+
+.column-title {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  padding-top: 5%;
+  text-align: center;
+}
+
 .header-text {
   text-align: center;
   color: $darkcyan;
