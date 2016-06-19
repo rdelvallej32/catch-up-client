@@ -25,8 +25,12 @@
 <legend>Reminder</legend>
 {{input type="number"value=contact.reminder class="edit-bar"}}
 </ul>
-<button class="btn btn-default btn-xs" {{action "save"}}>Save</button>
-<button class="btn btn-default btn-xs" {{action "cancel"}}>Cancel</button>
+<div class="modal-footer">
+<div class="btn-group btn-space" role="group" aria-label="...">
+<button type="button" class="btn btn-danger btn-md btn-prime" {{action "save"}}>Save</button>
+<button type="button" class="btn btn-default btn-md" {{action "cancel"}}>Cancel</button>
+</div>
+</div>
 </div>
 {{else}}
 <div class="card">
