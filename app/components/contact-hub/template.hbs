@@ -59,18 +59,14 @@
 <legend>Reminder</legend>
 <li class="contact-item">Every {{contact.reminder}} month(s)</li>
 </ul>
+<div class="modal-footer">
+  {{#link-to 'contacts'}}
+  <button type="button" class="btn btn-default btn-md">Back to Contacts</button>
+  {{/link-to}}
+</div>
 </div>
 {{/if}}
 
 
 
 </div>
-
-
-
-
-
-
-    {{#link-to 'contacts'}}
-    <button>Back</button>
-    {{/link-to}}
