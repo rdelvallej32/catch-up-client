@@ -1,33 +1,54 @@
 <div class="card-block">
 
-<h4>
+
 
 {{#if contenteditable}}
+<legend>First Name</legend>
 {{input value=contact.first_name class="edit-bar"}}
+<legend>Last Name</legend>
 {{input value=contact.last_name class="edit-bar"}}
+<legend>Occupation</legend>
 {{input value=contact.occupation class="edit-bar"}}
+<legend>Company</legend>
 {{input value=contact.company class="edit-bar"}}
+<legend>Professional Relationship</legend>
 {{input value=contact.professional_relationship class="edit-bar"}}
+<legend>Fun Fact</legend>
 {{input value=contact.fact class="edit-bar"}}
+<legend>Last Time Contacted</legend>
 {{input type="date" value=contact.last_contacted class="edit-bar"}}
+<legend>Reminder</legend>
 {{input type="number"value=contact.reminder class="edit-bar"}}
 <button class="btn btn-default btn-xs" {{action "save"}}>Save</button>
 <button class="btn btn-default btn-xs" {{action "cancel"}}>Cancel</button>
 {{else}}
+<div class="card">
+  <div class="card-img">
+    <p>Image goes here</p>
+  </div>
 <ul class="card-look">
-  <a href="" {{action "edit" on="click"}} data-toggle="tooltip" title="Click to edit name"><span class="glyphicon glyphicon-pencil glyphicon-small"></span></a>
-<li class="editable" {{action "edit" on="click"}}>{{contact.first_name}}</li>
-<li>{{contact.last_name}}</li>
-<li>{{contact.occupation}}</li>
-<li>{{contact.company}}</li>
-<li>{{contact.professional_relationship}}</li>
-<li>{{contact.fact}}</li>
-<li>{{contact.last_contacted}}</li>
-<li>{{contact.reminder}}</li>
+  <a href="" {{action "edit" on="click"}} data-toggle="tooltip" title="Click to edit contact"><span class="glyphicon glyphicon-pencil glyphicon-small"></span></a>
+<legend>First Name</legend>
+<li class="contact-item">{{contact.first_name}}</li>
+<legend>Last Name</legend>
+<li class="contact-item">{{contact.last_name}}</li>
+<legend>Occupation</legend>
+<li class="contact-item">{{contact.occupation}}</li>
+<legend>Company</legend>
+<li class="contact-item">{{contact.company}}</li>
+<legend>Professional Relationship</legend>
+<li class="contact-item">{{contact.professional_relationship}} </li>
+<legend>Fun Fact</legend>
+<li class="contact-item">{{contact.fact}}</li>
+<legend>Last Time Contacted</legend>
+<li class="contact-item">{{contact.last_contacted}}</li>
+<legend>Reminder</legend>
+<li class="contact-item">Every {{contact.reminder}} month(s)</li>
 </ul>
+</div>
 {{/if}}
 
-</h4>
+
 
 </div>
 
