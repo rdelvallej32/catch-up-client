@@ -2,10 +2,23 @@
 @import 'bootstrap/theme';
 @import 'colors';
 
+.no-padding {
+  margin: 0;
+  padding: 0;
+}
+
 a:hover {
   text-decoration: none;
 }
 
+.header-text {
+  text-align: center;
+  color: $darkcyan;
+}
+
+.add-buttons {
+  float: right;
+}
 .card {
   background: #fff;
   border: 1px solid #aaa;

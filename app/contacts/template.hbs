@@ -1,11 +1,18 @@
+
+<div class="header-text">
+  <h2>Welcome {{user.email}} to your Contact Hub!</h2>
+</div>
+
+<h5>
+{{#link-to "new-contact"}}
+  <span class="add-buttons">Add a new Contact</span>
+{{/link-to}}
+</h5>
+
 <div class="row no-gutter clear-float test">
       {{#each model as |contact|}}
           <div class="col-md-4 building-card test">{{contact-hub/card contact=contact}}</div>
       {{/each}}
   </div>
-
-  {{#link-to "new-contact"}}
-    <button>Make that Contact</button>
-  {{/link-to}}
 
 {{outlet}}
