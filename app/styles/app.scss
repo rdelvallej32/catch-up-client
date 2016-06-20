@@ -152,3 +152,9 @@ a:hover {
 .card-look {
   list-style: none;
 }
+
+@media (min-width: 992px) {
+.col-md-offset-4 {
+    // margin-left: 33.33333%;
+  }
+}

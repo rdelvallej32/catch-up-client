@@ -9,9 +9,9 @@
 {{/link-to}}
 </h5>
 
-<div class="row no-gutter clear-float test">
+<div class="no-gutter clear-float test">
       {{#each model as |contact|}}
-          <div class="col-md-4 building-card test">{{contact-hub/card contact=contact}}</div>
+          <div class="row building-card test">{{contact-hub/card contact=contact}}</div>
       {{/each}}
   </div>
 
