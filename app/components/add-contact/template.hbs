@@ -1,3 +1,5 @@
+<div class="card">
+  <ul>
 {{firstname-input first_name=contact.first_name}}
 {{lastname-input last_name=contact.last_name}}
 {{occupation-input occupation=contact.occupation}}
@@ -6,7 +8,8 @@
 {{fact-input fact=contact.fact}}
 {{lastcontacted-input last_contacted=contact.last_contacted}}
 {{reminder-input reminder=contact.reminder}}
-
+</ul>
+<div class="modal-footer">
 <button type="submit" class="btn btn-primary new-contact-form" {{action "submit"}}>
   Submit
 </button>
@@ -14,3 +17,6 @@
 <button type="submit" class="btn btn-primary new-contact-form" {{action "reset"}}>
   Cancel
 </button>
+</div>
+
+</div>

@@ -13,7 +13,7 @@ a:hover {
 }
 
 .header {
-  background: url('http://www.twitrcovers.com/wp-content/uploads/2012/09/Friends.jpg');
+  background: url('../images/catchup.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -155,6 +155,10 @@ a:hover {
 
 .center {
   text-align: center;
+}
+
+.top-space {
+  margin-top: 30px;
 }
 
 @media (max-width: 500px){
