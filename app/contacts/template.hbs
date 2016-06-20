@@ -3,13 +3,17 @@
   <h2>Welcome {{user.email}} to your Contact Hub!</h2>
 </div>
 
-<h5>
-{{#link-to "new-contact"}}
-  <span class="add-buttons">Add a new Contact</span>
-{{/link-to}}
-</h5>
 
 <div class="no-gutter clear-float test">
+  <div class="row">
+    <div class="col-xs-5 col-xs-offset-4 col-sm-4 col-sm-offset-8">
+  {{#link-to "new-contact"}}
+    <span class="glyphicon glyphicon-plus re-size"></span><span> Add a new Contact</span>
+  {{/link-to}}
+</div>
+  </div>
+
+
       {{#each model as |contact|}}
           <div class="building-card test">{{contact-hub/card contact=contact}}</div>
       {{/each}}
