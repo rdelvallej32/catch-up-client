@@ -1,20 +1,27 @@
+<div class="card">
 <div class="form-group">
-  <label for="previous">Old Password</label>
+  <ul>
+  <label class="top-space" for="previous">Old Password</label>
   {{input type="password"
-          class="form-control"
+          class="form-control edit-bar"
           id="previous"
           placeholder="Old password"
           value=passwords.previous}}
+        </ul>
 </div>
 
 <div class="form-group">
+  <ul>
   <label for="next">New Password</label>
   {{input type="password"
-          class="form-control"
+          class="form-control edit-bar"
           id="next"
           placeholder="New password"
           value=passwords.next}}
+        </ul>
 </div>
+
+<div class="modal-footer">
 
 <button type="submit" class="btn btn-primary" {{action "submit"}}>
   Change Password
@@ -23,3 +30,6 @@
 <button class="btn btn-default" {{action "reset"}}>
   Cancel
 </button>
+
+</div>
+</div>
