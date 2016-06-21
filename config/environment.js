@@ -40,6 +40,9 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
+    ENV.baseURL = '/catch-up-client/';
+    ENV.locationType = 'hash';
+    ENV.apiHost = 'https://murmuring-reef-45689.herokuapp.com';
 
   }
 
